@@ -1,4 +1,4 @@
-package ejVerdir;
+package Personas;
 
 import java.io.Serializable;
 
@@ -12,7 +12,6 @@ public class Persona implements Serializable {
     }
     public String getNombre() {
         return nombres;
-
     }
     public void setNombre(String nombres) {
         this.nombres = nombres;

@@ -1,4 +1,6 @@
-package ejVerdir;
+
+
+import Personas.Persona;
 
 import java.io.*;
 

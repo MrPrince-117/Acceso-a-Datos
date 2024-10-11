@@ -23,17 +23,17 @@ public class LeerEmpleadoXML {
                 doc.getDocumentElement().normalize();
                 System.out.printf("Elemento raiz: %s %n", doc.getDocumentElement().getNodeName());
                 NodeList nList = doc.getElementsByTagName("empleado");
-                System.out.printf("Nodos empleado a recorrer: %s %n", nList.getLength());
+                System.out.printf("Nodos de empleado a recorrer: %s %n", nList.getLength());
                 for (int i = 0; i < nList.getLength(); i++) {
                     Node nNode = nList.item(i);
                     if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                         Element element = (Element) nNode;
-                        System.out.println("----------------");
+                        System.out.println("-------------------");
                         System.out.printf("ID = %s %n", element.getElementsByTagName("id").item(0).getTextContent());
                         System.out.printf("Apellido = %s %n", element.getElementsByTagName("apellido").item(0).getTextContent());
                         System.out.printf("Dep = %s %n", element.getElementsByTagName("dep").item(0).getTextContent());
                         System.out.printf("Salario = %s %n", element.getElementsByTagName("salario").item(0).getTextContent());
-                        System.out.println("----------------");
+                        System.out.println("--------------------");
                     }
                 }
             } catch (ParserConfigurationException e) {
