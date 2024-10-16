@@ -1,21 +1,14 @@
 package Cancion;
 
-import org.w3c.dom.DOMImplementation;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Text;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
+import org.w3c.dom.*;
+import java.io.*;
+import javax.xml.parsers.*;
 import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-import java.io.*;
-
-public class CrearCancionXML {
+import javax.xml.transform.stream.*;
+public class CancionAleatorio {
     public static void main(String[] args) throws FileNotFoundException {
-        File fichero = new File("C:\\Users\\aludam2\\Desktop\\DAT\\CancionesAleatorias.dat");
+        File fichero = new File("C:\\Users\\aludam2\\Desktop\\DAT\\CancionesAle.dat");
         RandomAccessFile file = new RandomAccessFile(fichero,"r");
         int posicion=0;
         Double salario;
@@ -53,7 +46,9 @@ public class CrearCancionXML {
                 cancionEspañola = file.readBoolean();
                 if(id>0){
                     Element raiz = document.createElement("cancion");
+
                     document.getDocumentElement().appendChild(raiz);
+
                     CrearElemento("id",Integer.toString(id),raiz,document);
                     CrearElemento("año",Integer.toString(año),raiz,document);
                     CrearElemento("titulo",titulos.trim(),raiz,document);
@@ -68,23 +63,22 @@ public class CrearCancionXML {
             Result result = new StreamResult(new java.io.File("Canciones.xml"));
             Transformer tf = TransformerFactory.newInstance().newTransformer();
             tf.transform(source,result);
-        } catch (IOException e) {
-            e.printStackTrace();
         } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         } catch (TransformerConfigurationException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         } catch (TransformerException e) {
-            e.printStackTrace();
-        } catch (RuntimeException e){
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
-    static void CrearElemento (String datoCan, String valor, Element raiz, Document document) {
-        Element elem = document.createElement("datoCanciones");
+    static void CrearElemento (String datoEmple, String valor, Element raiz, Document document) {
+        Element elem = document.createElement(datoEmple);
         Text text = document.createTextNode(valor); //damos valor
         raiz.appendChild(elem); //pegamos el elemento hijo a la raiz
         elem.appendChild(text); //pegamos el valor
     }//Fin CrearElemento
 }
+
+
