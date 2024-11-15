@@ -11,5 +11,7 @@
     <orderEntry type="library" name="kxml2-min-2.3.0" level="project" />
     <orderEntry type="library" name="jakarta.xml.bind.api" level="project" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="mysql.connector.j" level="project" />
+    <orderEntry type="library" name="mysql.connector.j1" level="project" />
   </component>
 </module>

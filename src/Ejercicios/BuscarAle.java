@@ -1,7 +1,8 @@
+package Ejercicios;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-import java.security.Key;
 
 public class BuscarAle {
     public static void main(String[] args) throws IOException {
@@ -9,7 +10,8 @@ public class BuscarAle {
         RandomAccessFile file = new RandomAccessFile(fichero, "r");
 
         
-        char apellido[] = new char[10],  aux;
+        char[] apellido = new char[10];
+        char aux;
         int id, dep ;
         double salario;
         

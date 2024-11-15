@@ -12,9 +12,12 @@ public class CancionAleatorio {
         RandomAccessFile file = new RandomAccessFile(fichero,"r");
         int posicion=0;
         Double salario;
-        char titulo[] = new char[20];
-        char artista[] = new char[20],aux ,auy,auz;
-        char duracion[] = new char[20];
+        char[] titulo = new char[20];
+        char[] artista = new char[20];
+        char aux;
+        char auy;
+        char auz;
+        char[] duracion = new char[20];
         int id;
         int año;
         boolean cancionEspañola;

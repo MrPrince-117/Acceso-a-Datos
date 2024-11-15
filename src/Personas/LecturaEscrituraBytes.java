@@ -9,8 +9,8 @@ public class LecturaEscrituraBytes {
         FileInputStream filein = new FileInputStream(fichero);
         DataOutputStream datout = new DataOutputStream(fileout);
         DataInputStream datin = new DataInputStream(filein);
-        String nombre[]= {"Sanchez","LuisMi","Chema"};
-        int edades[]= {13,14,15,};
+        String[] nombre = {"Sanchez","LuisMi","Chema"};
+        int[] edades = {13,14,15,};
         String n;
         int e;
         //Zona de accion

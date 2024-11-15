@@ -1,4 +1,4 @@
-package ejVerdir;
+package Ejercicios;
 
 import java.io.*;
 import java.util.Scanner;
@@ -23,7 +23,7 @@ public class RealesHastaM {
 		for (int i=0; i<10; i++) {
 			num = sc.nextInt();
 			System.out.print(" ");
-			fileout.write((int) num);
+			fileout.write(num);
 		}
 		fileout.close();
 		

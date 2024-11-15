@@ -1,4 +1,4 @@
-package ejVerdir;
+package Ejercicios;
 
 import java.io.File;
 

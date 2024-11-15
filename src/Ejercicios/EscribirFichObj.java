@@ -1,4 +1,4 @@
-
+package Ejercicios;
 
 import Personas.Persona;
 
@@ -17,8 +17,8 @@ public class EscribirFichObj {
 		FileInputStream fileIn = new FileInputStream(fichero);
 		ObjectInputStream dataIS = new ObjectInputStream(fileIn);
 		
-		String nombres[] = {"Michel", "Trevor", "Franklin"};
-		int edades[] = {25, 50, 45};
+		String[] nombres = {"Michel", "Trevor", "Franklin"};
+		int[] edades = {25, 50, 45};
 		
 		for(int i=0; i<edades.length; i++) {
 			persona = new Persona(nombres[i], edades[i]);

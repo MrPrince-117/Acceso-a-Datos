@@ -1,4 +1,4 @@
-package ejVerdir;
+package Ejercicios;
 
 import java.io.*;
 import java.util.ArrayList;

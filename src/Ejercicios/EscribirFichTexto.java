@@ -1,6 +1,5 @@
-package ejVerdir;
+package Ejercicios;
 import java.io.*;
-import java.util.Arrays;
 
 public class EscribirFichTexto {
 	static void arrayReverse(String[] array) {
@@ -20,15 +19,13 @@ public class EscribirFichTexto {
 		//String cadena = "Esto es una prueba con FileWriter";
 		//convierte la cadena en array de caracteres para extraerlos
 		
-		String prov[] = 
+		String[] prov =
 			{"Albacete", "Badajoz", "Huelva", "Madrid", "Segovia", "Soria", "Toledo", "Valladolid"
 				, "Zamora, Valencia"};
 		arrayReverse(prov);
 		
-		String prov2[] = new String[prov.length];
-		for (int i=0; i<prov.length; i++) {
-			prov2[i] = prov[i];
-		}
+		String[] prov2 = new String[prov.length];
+        System.arraycopy(prov, 0, prov2, 0, prov.length);
         for (int i=0; i<prov.length;i++) {
             System.out.println(prov2[i]);
         }
@@ -42,10 +39,10 @@ public class EscribirFichTexto {
 		for (int i=0; i<prov.length; i++) {
 			fic.write(prov[i]);
 			fic.append(' ');
-		};
-		
-		
-		//fic.append('*');
+		}
+
+
+        //fic.append('*');
 		fic.close();
 	}
 	

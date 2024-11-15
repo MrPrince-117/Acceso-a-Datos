@@ -21,7 +21,8 @@ public class CrearEmpleadoXml {
 
         int id , dep , posicion=0;
         Double salario;
-        char apellido[] = new char[10], aux;
+        char[] apellido = new char[10];
+        char aux;
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 

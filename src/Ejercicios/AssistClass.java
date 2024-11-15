@@ -1,4 +1,4 @@
-package ejVerdir;
+package Ejercicios;
 
 import java.io.*;
 
@@ -9,9 +9,9 @@ public class AssistClass {
         FileOutputStream fileout = new FileOutputStream(fichero);
         DataOutputStream dataOS = new DataOutputStream(fileout);
         
-        String prov[] = {"Davis", "Franklin", "Trevor", "Michel"};
+        String[] prov = {"Davis", "Franklin", "Trevor", "Michel"};
         
-        boolean  prov2[] = {true, false, true, true};
+        boolean[] prov2 = {true, false, true, true};
         for(int i=0; i<prov.length; i++) {
         	dataOS.writeUTF(prov[i]);
         	dataOS.writeBoolean(prov2[i]);

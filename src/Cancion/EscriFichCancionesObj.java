@@ -17,7 +17,7 @@ public class EscriFichCancionesObj {
 
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("");
+        System.out.println();
         System.out.print("ID de la canción: ");
         cancion.setTitulo(sc.nextLine());
         System.out.print("Año de la canción: ");

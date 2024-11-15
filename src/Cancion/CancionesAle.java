@@ -29,7 +29,7 @@ public class CancionesAle {
 
                 id=c.getId();
 
-                logitud= (id-1)*129;
+                logitud= (id-1)* 129L;
 
                 file.seek(logitud);
                 file.writeInt(id);

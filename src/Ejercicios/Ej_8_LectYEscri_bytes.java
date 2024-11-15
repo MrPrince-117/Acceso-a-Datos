@@ -1,6 +1,5 @@
-package ejVerdir;
+package Ejercicios;
 import java.io.*;
-import java.util.Scanner;
 
 public class Ej_8_LectYEscri_bytes {
 

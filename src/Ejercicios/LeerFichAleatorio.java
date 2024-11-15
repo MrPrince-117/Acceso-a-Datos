@@ -1,5 +1,6 @@
+package Ejercicios;
+
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
@@ -10,7 +11,7 @@ public class LeerFichAleatorio {
 
         int id, dep, posicion;
         Double salario;
-        char apellido[] = new char[10];
+        char[] apellido = new char[10];
 
         posicion=0;
 

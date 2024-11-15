@@ -1,6 +1,6 @@
+package Ejercicios;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
@@ -9,9 +9,9 @@ public class EscribirFichAleaotrio {
         File fichero = new File("C:\\Users\\alu11dam2\\Desktop\\DAT\\AleatorioEmple2.dat");
         RandomAccessFile file = new RandomAccessFile(fichero, "rw");
 
-        String apellido[] = {"Fer", "Gil", "Ramos"};
-        int dept[] = {10, 20, 30};
-        Double salario[] = {1000.45, 2230.78, 3002.9};
+        String[] apellido = {"Fer", "Gil", "Ramos"};
+        int[] dept = {10, 20, 30};
+        Double[] salario = {1000.45, 2230.78, 3002.9};
 
         StringBuffer buffer = null;
         int n = apellido.length;

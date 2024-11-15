@@ -3,7 +3,7 @@ package Personas;
 import java.util.*;
 
 public class ListaPersonas {
-    private List<Persona> lista = new ArrayList<Persona>();
+    private final List<Persona> lista = new ArrayList<Persona>();
 
     public ListaPersonas() {}
     public void add (Persona per) {

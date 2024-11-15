@@ -1,4 +1,4 @@
-package Cancion;
+package UNIDAD1.Cancion;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -12,5 +12,5 @@ public class MiObjectOutputStream extends ObjectOutputStream {
     protected MiObjectOutputStream()throws IOException,SecurityException{
         super();
     }
-    protected void writeStreamHeader() throws IOException {};
+    protected void writeStreamHeader() throws IOException {}
 }

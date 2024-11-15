@@ -1,4 +1,4 @@
-package ejVerdir;
+package Ejercicios;
 
 import java.io.*;
 
@@ -9,9 +9,9 @@ public class EscibirFichData {
 		FileOutputStream fileout = new FileOutputStream(fichero);
 		DataOutputStream dataOS = new DataOutputStream(fileout);
 		
-		String nombres[]= {"Ana","LuisMa", "Ali"};
-		int edades[]= {12,9,1};
-		Double alturas[] = {1.64,1.80,1.90};
+		String[] nombres = {"Ana","LuisMa", "Ali"};
+		int[] edades = {12,9,1};
+		Double[] alturas = {1.64,1.80,1.90};
 		
 		for (int i=0; i<alturas.length; i++) {
 			dataOS.writeUTF(nombres[i]);

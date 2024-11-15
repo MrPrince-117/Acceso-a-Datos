@@ -17,7 +17,7 @@ public class AñadirCancion {
         String duracion;
         boolean cancionEspañola;
         if (archivo.exists()) {
-            dataOs = new MiObjectOutputStream(new FileOutputStream(archivo, true));
+            dataOs = new UNIDAD1.Cancion.MiObjectOutputStream(new FileOutputStream(archivo, true));
         }else{
             FileOutputStream fos = new FileOutputStream(archivo);
             dataOs = new ObjectOutputStream(fos);

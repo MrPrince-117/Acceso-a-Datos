@@ -1,3 +1,4 @@
+package Ejercicios;
 
 import java.io.*;
 public class LeerFichTexto {
