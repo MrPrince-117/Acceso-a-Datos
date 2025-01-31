@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<odb name="neodatis.test" export-date-time="1737019418681" max-oid="6" file-format-version="9">
+  <meta-model >
+    <class id="1" name="UD3.Jugadores">
+      <attribute id="1" name="nombre" type="java.lang.String"/>
+      <attribute id="2" name="deporte" type="java.lang.String"/>
+      <attribute id="3" name="ciudad" type="java.lang.String"/>
+      <attribute id="4" name="edad" type="int"/>
+    </class>
+  </meta-model>
+  <objects >
+    <object oid="2" class-id="1">
+      <attribute id="1" name="nombre" value="Mar%EDa"/>
+      <attribute id="2" name="deporte" value="Voleibol"/>
+      <attribute id="3" name="ciudad" value="Madrid"/>
+      <attribute id="4" name="edad" value="14"/>
+    </object>
+    <object oid="3" class-id="1">
+      <attribute id="1" name="nombre" value="Miguel"/>
+      <attribute id="2" name="deporte" value="Tenis"/>
+      <attribute id="3" name="ciudad" value="Madrid"/>
+      <attribute id="4" name="edad" value="15"/>
+    </object>
+    <object oid="4" class-id="1">
+      <attribute id="1" name="nombre" value="Alicia"/>
+      <attribute id="2" name="deporte" value="Tenis"/>
+      <attribute id="3" name="ciudad" value="Madrid"/>
+      <attribute id="4" name="edad" value="15"/>
+    </object>
+    <object oid="5" class-id="1">
+      <attribute id="1" name="nombre" value="Mario"/>
+      <attribute id="2" name="deporte" value="Baloncesto"/>
+      <attribute id="3" name="ciudad" value="Guadalajara"/>
+      <attribute id="4" name="edad" value="15"/>
+    </object>
+  </objects>
+</odb>
