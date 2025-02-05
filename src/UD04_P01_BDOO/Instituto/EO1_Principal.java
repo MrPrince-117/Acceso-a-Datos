@@ -1,5 +1,16 @@
 package UD04_P01_BDOO.Instituto;
 
+import org.neodatis.odb.ODB;
+import org.neodatis.odb.ODBFactory;
+import org.neodatis.odb.*;
+import org.neodatis.odb.core.query.IQuery;
+import org.neodatis.odb.core.query.criteria.Where;
+
+import javax.persistence.criteria.CriteriaQuery;
+import java.sql.Connection;
+import java.sql.*;
+import java.util.HashSet;
+
 public class EO1_Principal {
     static ODB bd;
     public static void main(String[] args) {
